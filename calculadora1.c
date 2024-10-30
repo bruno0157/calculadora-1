@@ -7,11 +7,11 @@
 
 //1
 float funcSoma(float a1, float b1, float c1) {
-	printf("Informe o 1º número: ");
+	printf("Informe o 1Âº nÃºmero: ");
 	scanf("%f", &a1);
-	printf("\nInforme o 2º número: ");
+	printf("\nInforme o 2Âº nÃºmero: ");
 	scanf("%f", &b1);
-	printf("\nInforme o 3º número: ");
+	printf("\nInforme o 3Âº nÃºmero: ");
 	scanf("%f", &c1);
 	float total = a1+b1+c1;
 	return total;
@@ -27,11 +27,11 @@ float funcSubtracao(float a1, float b1) {
 }
 //3
 float funcMultiplicacao(float a1, float b1, float c1) {
-	printf("Informe o 1º número: ");
+	printf("Informe o 1Âº nÃºmero: ");
 	scanf("%f", &a1);
-	printf("\nInforme o 2º número: ");
+	printf("\nInforme o 2Âº nÃºmero: ");
 	scanf("%f", &b1);
-	printf("\nInforme o 3º número: ");
+	printf("\nInforme o 3Âº nÃºmero: ");
 	scanf("%f", &c1);
 	float produto = a1 * b1*c1;
 	return produto;
@@ -56,7 +56,7 @@ float funcExponenciacao(float a1, float b1) {
 }
 //6
 float funcRadiciacao(float a1) {
-	printf("Informe um número: ");
+	printf("Informe um nÃºmero: ");
 	scanf("%f", &a1);
 	float raiz = sqrt(a1);
 	return raiz;
@@ -77,7 +77,7 @@ double funcBhaskara(double a1, double b1, double c1) {
 	printf("Informe o coeficiente A: ");
 	scanf("%lf", &a1);
     if (a1 == 0) {
-        printf("\nO coeficiente A não pode ser zero.\n\n");
+        printf("\nO coeficiente A nÃ£o pode ser zero.\n\n");
         return;
     }
 	printf("\nInforme o coeficiente B: ");
@@ -87,14 +87,14 @@ double funcBhaskara(double a1, double b1, double c1) {
 
 	delta = (b1*b1) - (4 * a1 * c1);
     if (delta < 0) {
-        printf("\nNão há raízes reais, pois o discriminante é negativo.\n\n");
+        printf("\nNÃ£o hÃ¡ raÃ­zes reais, pois o discriminante Ã© negativo.\n\n");
         return;
     }
 
 	x1 = (-(b1) + sqrt(delta))/(2 * a1);
 	x2 = (-(b1) - sqrt(delta))/(2 * a1);
 
-	printf("\nRaízes: x1 = %.2lf | x2 = %.2lf \n\n", x1, x2);
+	printf("\nRaÃ­zes: x1 = %.2lf | x2 = %.2lf \n\n", x1, x2);
 
 	return x1, x2;
 }
@@ -110,14 +110,14 @@ int main () {
 
 	do {
 		printf("--CALCULADORA--\n");
-		printf("\nDigite [1] para realizar uma soma entre três números reais: ");
-		printf("\nDigite [2] para realizar uma subtração entre dois números reais: ");
-		printf("\nDigite [3] para realizar uma multiplicação entre três números reais: ");
-		printf("\nDigite [4] para realizar uma divisão entre dois números reais: ");
-		printf("\nDigite [5] para realizar uma exponenciação entre dois números reais: ");
-		printf("\nDigite [6] para calcular a raiz quadrada de um número real: ");
-		printf("\nDigite [7] para encontrar o resto de uma divisão entre dois números reais: ");
-		printf("\nDigite [8] para calcular as raízes de uma função quadrática, dados seus três coeficientes: \n");
+		printf("\nDigite [1] para realizar uma soma entre trÃªs nÃºmeros reais: ");
+		printf("\nDigite [2] para realizar uma subtraÃ§Ã£o entre dois nÃºmeros reais: ");
+		printf("\nDigite [3] para realizar uma multiplicaÃ§Ã£o entre trÃªs nÃºmeros reais: ");
+		printf("\nDigite [4] para realizar uma divisÃ£o entre dois nÃºmeros reais: ");
+		printf("\nDigite [5] para realizar uma exponenciaÃ§Ã£o entre dois nÃºmeros reais: ");
+		printf("\nDigite [6] para calcular a raiz quadrada de um nÃºmero real: ");
+		printf("\nDigite [7] para encontrar o resto de uma divisÃ£o entre dois nÃºmeros reais: ");
+		printf("\nDigite [8] para calcular as raÃ­zes de uma funÃ§Ã£o quadrÃ¡tica, dados seus trÃªs coeficientes: \n");
 		printf("\nDigite [9] para encerrar o programa: \n");
 		printf("\nResposta: ");
 		scanf("%d", &resp);
@@ -133,42 +133,41 @@ int main () {
             case 2:
                 system ("cls");
                 subtracao = funcSubtracao(a,b);
-                printf("\nResultado da subtração: %.2f\n\n", subtracao);
+                printf("\nResultado da subtraÃ§Ã£o: %.2f\n\n", subtracao);
                 break;
 
             case 3:
                 system ("cls");
                 multiplicacao = funcMultiplicacao(a,b,c);
-                printf("\nResultado da multiplicação: %.2f\n\n", multiplicacao);
+                printf("\nResultado da multiplicaÃ§Ã£o: %.2f\n\n", multiplicacao);
                 break;
 
             case 4:
                 system ("cls");
                 divisao = funcDivisao(a,b);
-                printf("\nResultado da divisão: %.2f\n\n", divisao);
+                printf("\nResultado da divisÃ£o: %.2f\n\n", divisao);
                 break;
 
             case 5:
                 system ("cls");
                 exponenciacao = funcExponenciacao(a,b);
-                printf("\nResultado da exponenciação: %.2f\n\n", exponenciacao);
+                printf("\nResultado da exponenciaÃ§Ã£o: %.2f\n\n", exponenciacao);
                 break;
 
             case 6:
                 system ("cls");
                 radiciacao = funcRadiciacao(a);
-                printf("\nRaíz quadrada do número informado: %.2f\n\n", radiciacao);
+                printf("\nRaÃ­z quadrada do nÃºmero informado: %.2f\n\n", radiciacao);
                 break;
 
             case 7:
                 system ("cls");
                 modulo = funcModulo(a,b);
-                printf("\nResto da divisão: %d\n\n", modulo);
+                printf("\nResto da divisÃ£o: %d\n\n", modulo);
                 break;
 
 			case 8:
 				system ("cls");
-
 				bhaskara = funcBhaskara(a, b, c);
 				break;
 		}
